@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "UserEntries";
+}
+@if (Model != null)
+{
+    <ul>
+        @foreach (var entry in Model)
+        {
+            <li>@entry</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Veri bulunamadı.</p>
+}
